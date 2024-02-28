@@ -1,0 +1,11 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Color del overlay con opacidad */
+  }
+.letraCabe {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(52, 86, 111);
+}
+.fondoCabe{
+    background-color: rgb(245, 220, 155);
+}
