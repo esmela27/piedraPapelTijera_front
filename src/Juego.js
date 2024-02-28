@@ -29,20 +29,6 @@ const Juego = ({ mostrarBoton }) => {
     const [mostrarOverlay, setMostrarOverlay] = useState(false);
     const [mostrarOverlayJugada, setMostrarOverlayJugada] = useState(false);
     const [ganador, setGanador] = useState('')
-    const navigate = useNavigate();
-
-    useEffect(() => {
-      const handleBeforeUnload = () => {
-        // Almacenar el indicador en localStorage antes de recargar la página
-        localStorage.setItem('reloadIndicator', 'true');
-      };
-  
-      window.addEventListener('beforeunload', handleBeforeUnload);
-  
-      return () => {
-        window.removeEventListener('beforeunload', handleBeforeUnload);
-      };
-    }, []);
 
     useEffect(() => {
         console.log(seleccionado1, movimiento1);
