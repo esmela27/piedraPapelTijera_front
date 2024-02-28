@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useCallback} from 'react';
 import Cabecera from './Cabecera';
 import axios from 'axios';
-import { Link, useNavigate} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { ButtonGroup } from 'react-bootstrap';
 import './Juego.css'
 import Piedra from './img/piedra.png'
