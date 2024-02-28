@@ -126,22 +126,22 @@ const Juego = ({ mostrarBoton }) => {
         if ((key === 'w' || key === 'a' || key === 'd')) {
             console.log(`Se presionó la tecla "${key}" para el Jugador 1`);
             if (key === 'w') {
-                seleccionar1('piedra');
-            } else if (key === 'a') {
-                seleccionar1('papel');
-            } else if (key === 'd') {
                 seleccionar1('tijera');
+            } else if (key === 'a') {
+                seleccionar1('piedra');
+            } else if (key === 'd') {
+                seleccionar1('papel');
             }
         }
 
         if ((key === 'ArrowUp' || key === 'ArrowRight' || key === 'ArrowLeft')) {
             console.log(`Se presionó la tecla "${key}" para el Jugador 2`);
             if (key === 'ArrowUp') {
-                seleccionar2('piedra');
+                seleccionar2('tijera');
             } else if (key === 'ArrowRight') {
                 seleccionar2('papel');
             } else if (key === 'ArrowLeft') {
-                seleccionar2('tijera');
+                seleccionar2('piedra');
             }
         }
     }, [seleccionar1, seleccionar2]);
