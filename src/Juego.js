@@ -70,6 +70,7 @@ const Juego = ({ mostrarBoton }) => {
 
     const realizarJugada = async (jugada1, jugada2) => {
         try {
+            console.log(process.env.REACT_APP_API_URL)
             const response = await axios.get(process.env.REACT_APP_API_URL +`/api/juego?jugadaUsuario1=${jugada1}&jugadaUsuario2=${jugada2}`);
             const data = response.data;
             const datos = JSON.parse(data.resultadoFinal)
