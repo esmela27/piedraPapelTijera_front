@@ -55,7 +55,7 @@ const Juego = ({ mostrarBoton }) => {
     };
     const iniciar = async () => {
         try {
-            const response = await axios.post(process.env.REACT_APP_API_URL+'/api/juego/reiniciar');
+            const response = await axios.post(process.env.REACT_APP_API_URL+'/Juego/api/juego/reiniciar');
             console.log(response.data)
 
         } catch (error) {
@@ -70,7 +70,7 @@ const Juego = ({ mostrarBoton }) => {
 
     const realizarJugada = async (jugada1, jugada2) => {
         try {
-            const response = await axios.get(process.env.REACT_APP_API_URL +`/api/juego?jugadaUsuario1=${jugada1}&jugadaUsuario2=${jugada2}`);
+            const response = await axios.get(process.env.REACT_APP_API_URL +`/Juego/api/juego?jugadaUsuario1=${jugada1}&jugadaUsuario2=${jugada2}`);
             const data = response.data;
             const datos = JSON.parse(data.resultadoFinal)
             console.log(datos)
